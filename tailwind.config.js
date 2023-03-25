@@ -28,7 +28,10 @@ module.exports = {
         'md': '1.8rem',
         'base': '2.4rem',
         'lg': '3.2rem',
-        'xl': '4.2rem'
+        'xl': '4.8rem'
+      },
+      lineHeight: {
+        1: '1'
       },
       borderRadius: {
         'sm': '0.6rem',
