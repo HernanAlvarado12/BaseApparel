@@ -39,17 +39,19 @@
                     Hello fellow shoppers! We're currently building our new fashion store. Add your email 
                     below to stay up-to-date with announcements and our launch deals.
                 </p>
-                <form>
-                    <label class ="flex items-center justify-end relative" for ="">
-                        <input class ="w-full h-4 text-xs indent-2 outline-none rounded-full border border-grdnt-2-100 placeholder:text-red" id ="inputEmail" type ="email" placeholder ="Email Address" required>
-                        <label class ="w-6 h-[3.6rem] flex items-center justify-center absolute">
-                            <input class ="w-full h-full flex items-center justify-center absolute right-[0.2rem] rounded-full bg-gradient-to-r from-grdnt-2-100 to-grdnt-2-200" type ="submit" value ="">
+                <form id ="formDataElement">
+                    <label class ="flex items-center justify-end relative">
+                        <input class ="w-full h-4 text-xs indent-2 outline-none rounded-full border border-grdnt-2-100 placeholder:text-red" id ="inputEmail" type ="email" name ="emailAddress" placeholder ="Email Address" required>
+                        <label class ="w-6 h-[3.6rem] flex items-center justify-center absolute z-10">
+                            <input class ="w-full h-full flex items-center justify-center absolute z-10 right-[0.2rem] rounded-full bg-gradient-to-r from-grdnt-2-100 to-grdnt-2-200" type ="submit" value ="">
                             <img class ="relative" src ="./assets/arrow.svg" alt ="icon arrow">
                         </label>
                     </label>
                 </form>
             </section>
         </main>
+
+        <script src ="./model.js"></script>
     </body>
 
 </html>
