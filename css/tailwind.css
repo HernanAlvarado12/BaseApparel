@@ -524,6 +524,10 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .absolute {
   position: absolute;
 }
@@ -532,8 +536,24 @@ html {
   position: relative;
 }
 
+.-bottom-2 {
+  bottom: -2rem;
+}
+
+.left-0 {
+  left: 0px;
+}
+
 .right-\[0\.2rem\] {
   right: 0.2rem;
+}
+
+.left-2 {
+  left: 2rem;
+}
+
+.-bottom-2\.5 {
+  bottom: -2.5rem;
 }
 
 .z-10 {
@@ -563,6 +583,10 @@ html {
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-2 {
@@ -677,6 +701,10 @@ html {
   font-size: 1.4rem;
 }
 
+.text-xss {
+  font-size: 1.2rem;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -687,6 +715,10 @@ html {
 
 .font-normal {
   font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .uppercase {
@@ -720,6 +752,26 @@ html {
 .placeholder\:text-red::placeholder {
   --tw-text-opacity: 1;
   color: hsl(0 36% 70% / var(--tw-text-opacity));
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hover\:from-grdnt-1-100:hover {
+    --tw-gradient-from: hsl(0, 0%, 100%);
+    --tw-gradient-to: hsl(0 0% 100% / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .hover\:to-grdnt-1-200:hover {
+    --tw-gradient-to: hsl(0, 100%, 98%);
+  }
+}
+
+.peer:invalid ~ .peer-invalid\:visible {
+  visibility: visible;
+}
+
+.peer:invalid ~ .peer-invalid\:block {
+  display: block;
 }
 
 @media (min-width: 640px) {

@@ -41,11 +41,12 @@
                 </p>
                 <form id ="formDataElement">
                     <label class ="max-w-2xl mx-auto flex items-center justify-end relative md:mr-auto md:ml-0">
-                        <input class ="w-full h-4 text-xs indent-2 outline-none rounded-full border border-grdnt-2-100 placeholder:text-red" id ="inputEmail" type ="email" name ="emailAddress" placeholder ="Email Address" required>
+                        <input class ="w-full h-4 text-xs indent-2 outline-none rounded-full border border-grdnt-2-100 placeholder:text-red invalid::border-red-100 peer" id ="inputEmail" type ="email" name ="emailAddress" placeholder ="Email Address" autocomplete ="email" required>
                         <label class ="w-6 h-[3.6rem] flex items-center justify-center absolute z-10 cursor-pointer">
-                            <input class ="w-full h-full flex items-center justify-center absolute right-[0.2rem] cursor-pointer rounded-full bg-gradient-to-r from-grdnt-2-100 to-grdnt-2-200" type ="submit" value ="">
+                            <input class ="w-full h-full flex items-center justify-center absolute right-[0.2rem] cursor-pointer rounded-full bg-gradient-to-r from-grdnt-2-100 to-grdnt-2-200 hover:from-grdnt-1-100 hover:to-grdnt-1-200" type ="submit" value ="">
                             <img class ="relative" src ="./assets/arrow.svg" alt ="icon arrow">
                         </label>
+                        <span class ="invisible text-xss font-semibold absolute left-2 -bottom-2.5 peer-invalid:visible">Please provide a valid email</span>
                     </label>
                 </form>
             </section>

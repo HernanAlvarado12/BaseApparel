@@ -34,6 +34,7 @@ module.exports = {
         main: '10rem 1fr'
       },
       fontSize: {
+        'xss': '1.2rem',
         'xs': '1.4rem',
         'sm': '1.6rem',
         'md': '1.8rem',
