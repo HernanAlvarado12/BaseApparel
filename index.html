@@ -24,26 +24,26 @@
     </head>
 
     <body>
-        <main class ="grid">
-            <nav class ="w-90 h-6 mx-auto flex items-center bg-white">
+        <main class ="grid md:h-screen md:grid-cols-2 md:grid-rows-main lg:grid-cols-main-1">
+            <nav class ="w-90 h-6 mx-auto flex items-center bg-white md:w-85 md:h-10 lg:w-80">
                 <img class ="h-2.5" src ="./assets/logo.svg" alt ="icon logo" draggable ="false" loading ="lazy">
             </nav>
-            <picture class ="w-full">
+            <picture class ="w-full md:row-span-2">
                 <source media ="(min-width: 900px)" srcset ="./assets/hero-desktop.jpg">
-                <img class ="w-full" src ="./assets/hero-mobile.jpg" alt ="image hero" draggable ="false" loading ="lazy">
+                <img class ="w-full max-h-[40rem] md:h-full md:max-h-none" src ="./assets/hero-mobile.jpg" alt ="image hero" draggable ="false" loading ="lazy">
             </picture>
-            <section class ="w-90 mx-auto mt-3 text-red text-center">
-                <h2 class ="text-xl font-light uppercase">we're</h2>
-                <h3 class ="text-gray text-xl font-medium uppercase leading-1">coming soon</h3>
-                <p class ="mt-1 mb-2 text-sm font-normal">
+            <section class ="w-90 mx-auto mt-3 text-red text-center md:w-85 md:text-start lg:w-80">
+                <h2 class ="text-xl font-light uppercase md:text-2xl">we're</h2>
+                <h3 class ="text-gray text-xl font-medium uppercase leading-1 md:text-2xl">coming soon</h3>
+                <p class ="mt-1 mb-2 text-sm font-normal sm:mb-3 md:mt-4 md:mb-6">
                     Hello fellow shoppers! We're currently building our new fashion store. Add your email 
                     below to stay up-to-date with announcements and our launch deals.
                 </p>
                 <form id ="formDataElement">
-                    <label class ="flex items-center justify-end relative">
+                    <label class ="max-w-2xl mx-auto flex items-center justify-end relative md:mr-auto md:ml-0">
                         <input class ="w-full h-4 text-xs indent-2 outline-none rounded-full border border-grdnt-2-100 placeholder:text-red" id ="inputEmail" type ="email" name ="emailAddress" placeholder ="Email Address" required>
-                        <label class ="w-6 h-[3.6rem] flex items-center justify-center absolute z-10">
-                            <input class ="w-full h-full flex items-center justify-center absolute z-10 right-[0.2rem] rounded-full bg-gradient-to-r from-grdnt-2-100 to-grdnt-2-200" type ="submit" value ="">
+                        <label class ="w-6 h-[3.6rem] flex items-center justify-center absolute z-10 cursor-pointer">
+                            <input class ="w-full h-full flex items-center justify-center absolute right-[0.2rem] cursor-pointer rounded-full bg-gradient-to-r from-grdnt-2-100 to-grdnt-2-200" type ="submit" value ="">
                             <img class ="relative" src ="./assets/arrow.svg" alt ="icon arrow">
                         </label>
                     </label>
