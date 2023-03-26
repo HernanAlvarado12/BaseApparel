@@ -7,6 +7,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      screens: {
+        md: '900px'
+      },
       spacing: {
         '0.5': '0.5rem',
         '1': '1rem',
@@ -20,8 +23,15 @@ module.exports = {
         '8': '8rem',
         '10': '10rem',
         '50': '50%',
+        '80': '80%',
         '85': '85%',
         '90': '90%'
+      },
+      gridTemplateColumns: {
+        'main-1': '1fr 0.8fr'
+      },
+      gridTemplateRows: {
+        main: '10rem 1fr'
       },
       fontSize: {
         'xs': '1.4rem',
@@ -29,7 +39,8 @@ module.exports = {
         'md': '1.8rem',
         'base': '2.4rem',
         'lg': '3.2rem',
-        'xl': '4.8rem'
+        'xl': '4.8rem',
+        '2xl': '5.4rem'
       },
       lineHeight: {
         1: '1'
